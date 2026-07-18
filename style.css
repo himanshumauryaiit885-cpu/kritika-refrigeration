@@ -1,0 +1,366 @@
+/* ===========================
+   KRITIKA REFRIGERATION
+   PREMIUM STYLE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+    line-height:1.7;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#3fc9ff;
+    font-size:28px;
+}
+
+.logo h2{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#3fc9ff;
+}
+
+/* Hero */
+
+.hero{
+    min-height:160vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px;
+    background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url("images/hero.jpg");
+
+background-size: contain;
+background-position:50% 20%  ;
+background-repeat: no-repeat;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#d7d7d7;
+    font-size:20px;
+}
+
+/* Buttons */
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn,.btn2{
+    display:inline-block;
+    padding:14px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    margin:10px;
+    transition:.35s;
+    font-weight:600;
+}
+
+.btn{
+    background:#3fc9ff;
+    color:black;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 25px #3fc9ff;
+}
+
+.btn2{
+    border:2px solid #3fc9ff;
+    color:#3fc9ff;
+}
+
+.btn2:hover{
+    background:#3fc9ff;
+    color:black;
+}
+
+/* Sections */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    border-color:#3fc9ff;
+    box-shadow:0 0 30px rgba(63,201,255,.35);
+}
+
+.card i{
+    font-size:45px;
+    color:#3fc9ff;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:12px;
+}
+
+/* About */
+
+#about{
+
+    position:relative;
+
+    background:
+    linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.85)),
+    url("images/about-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+section{
+padding:70px 20px;
+}
+
+}
+
+.glass-card{
+
+    max-width:950px;
+
+    margin:40px auto;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    transition:all .45s ease;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3fc9ff;
+
+    box-shadow:
+    0 0 20px rgba(63,201,255,.45),
+    0 0 45px rgba(63,201,255,.30),
+    0 20px 45px rgba(0,0,0,.45);
+
+}
+
+/*=========================
+CONTACT BACKGROUND
+=========================*/
+
+#contact{
+
+    position:relative;
+
+    background:
+    linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.88)),
+    url("images/contact-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+}
+
+/*=========================
+    SERVICES BACKGROUND
+=========================*/
+
+#services{
+
+    position:relative;
+
+    background:
+    linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.88)),
+    url("images/services-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+}
+
+/* Heading */
+
+#services h2{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:55px;
+
+}
+
+/* Cards */
+
+#services .card{
+
+    background:rgba(20,20,20,.72);
+
+    backdrop-filter:blur(14px);
+
+    -webkit-backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+#services .card:hover{
+
+    transform:translateY(-12px);
+
+    border:1px solid #3fc9ff;
+
+    box-shadow:0 15px 40px rgba(63,201,255,.35);
+
+}
+
+*{
+    max-width:100%;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+html{
+    overflow-x:hidden;
+}
