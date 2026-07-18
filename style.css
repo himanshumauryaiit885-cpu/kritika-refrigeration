@@ -211,33 +211,163 @@ footer{
     color:#888;
 }
 
-/* Mobile */
+/* ==========================
+   MOBILE RESPONSIVE DESIGN
+========================== */
 
 @media(max-width:768px){
 
+/* Header */
+
 header{
-flex-direction:column;
+    flex-direction:column;
+    padding:15px 5%;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.logo i{
+    font-size:24px;
 }
 
 nav{
-margin-top:15px;
+    margin-top:12px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 nav a{
-display:inline-block;
-margin:8px;
+    margin:6px 10px;
+    font-size:14px;
 }
+
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    padding:100px 20px 50px;
+
+    background-position:center;
+
+    background-size:cover;
+
+}
+
 
 .hero h1{
-font-size:38px;
+
+    font-size:34px;
+
+    line-height:1.3;
+
 }
+
 
 .hero p{
-font-size:17px;
+
+    font-size:16px;
+
+    line-height:1.6;
+
 }
 
+
+/* Buttons */
+
+.buttons{
+
+    margin-top:30px;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.btn,
+.btn2{
+
+    width:220px;
+
+    text-align:center;
+
+}
+
+
+/* Section spacing */
+
 section{
-padding:70px 20px;
+
+    padding:60px 20px;
+
+}
+
+
+section h2{
+
+    font-size:30px;
+
+    margin-bottom:35px;
+
+}
+
+
+/* Service cards */
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.card{
+
+    padding:25px;
+
+}
+
+
+/* Glass cards */
+
+.glass-card{
+
+    padding:25px;
+
+    margin:25px auto;
+
+}
+
+
+.glass-card p{
+
+    font-size:15px;
+
+}
+
+
+/* Gallery */
+
+.gallery-slider img{
+
+    width:280px;
+
+}
+
+
+/* Footer */
+
+footer{
+
+    font-size:14px;
+
 }
 
 }
