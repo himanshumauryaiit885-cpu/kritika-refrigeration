@@ -66,7 +66,7 @@ nav a:hover{
 /* Hero */
 
 .hero{
-    min-height:160vh;
+    min-height:130vh;
     display:flex;
     align-items:center;
     justify-content:center;
