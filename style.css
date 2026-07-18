@@ -73,7 +73,7 @@ nav a:hover{
     text-align:center;
     padding:120px 20px;
     background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.35)),
 url("images/hero.jpg.png");
 
 background-size: contain; 
@@ -302,7 +302,7 @@ CONTACT BACKGROUND
     position:relative;
 
     background:
-    linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.88)),
+    linear-gradient(rgba(0,0,0,.52),rgba(0,0,0,.88)),
     url("images/services-bg.jpg");
 
     background-size:cover;
