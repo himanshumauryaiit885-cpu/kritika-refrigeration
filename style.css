@@ -73,11 +73,11 @@ nav a:hover{
     text-align:center;
     padding:120px 20px;
     background:
-linear-gradient(rgba(0,0,0,.20),rgba(0,0,0,.35)),
+linear-gradient(rgba(0,0,0,.03),rgba(0,0,0,.10)),
 url("images/hero.jpg.png");
 
-background-size: contain; 
-background-position:  center;
+background-size: cover;
+background-position: center top;
 background-repeat: no-repeat;
 }
 
@@ -97,6 +97,10 @@ background-repeat: no-repeat;
 
 .buttons{
     margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
 .btn,.btn2{
@@ -104,29 +108,33 @@ background-repeat: no-repeat;
     padding:14px 35px;
     border-radius:40px;
     text-decoration:none;
-    margin:10px;
-    transition:.35s;
     font-weight:600;
+    color:white;
+    border:2px solid rgba(255,255,255,0.7);
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(8px);
+    transition:.35s ease;
 }
 
-.btn{
+
+/* Call */
+.btn:hover,
+.btn:active{
     background:#3fc9ff;
     color:black;
-}
-
-.btn:hover{
     transform:translateY(-4px);
     box-shadow:0 0 25px #3fc9ff;
 }
 
-.btn2{
-    border:2px solid #3fc9ff;
-    color:#3fc9ff;
-}
 
-.btn2:hover{
-    background:#3fc9ff;
-    color:black;
+/* WhatsApp */
+.btn2:hover,
+.btn2:active{
+    background:#25D366;
+    color:white;
+    border-color:#25D366;
+    transform:translateY(-4px);
+    box-shadow:0 0 25px #25D366;
 }
 
 /* Sections */
