@@ -1,11 +1,3 @@
-window.addEventListener("load", function () {
-
-    document
-    .getElementById("preloader")
-    .classList.add("preloader-hide");
-
-});
-
 // ==============================
 // KRITIKA REFRIGERATION
 // script.js
