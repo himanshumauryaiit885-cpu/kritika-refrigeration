@@ -352,16 +352,6 @@ section h2{
 
 }
 
-
-/* Gallery */
-
-.gallery-slider img{
-
-    width:280px;
-
-}
-
-
 /* Footer */
 
 footer{
@@ -439,9 +429,11 @@ CONTACT BACKGROUND
 
     position:relative;
 
+    padding:90px 8%;
+
     background:
     linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.50)),
-    url("images/services-bg.jpg");
+    url("images/services-bg.png");
 
     background-size:cover;
 
@@ -449,7 +441,7 @@ CONTACT BACKGROUND
 
     background-repeat:no-repeat;
 
-    background-attachment:fixed;
+    min-height:100vh;
 
 }
 
