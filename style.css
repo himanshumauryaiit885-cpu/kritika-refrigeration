@@ -74,7 +74,7 @@ nav a:hover{
     padding:120px 20px;
     background:
 linear-gradient(rgba(0,0,0,.03),rgba(0,0,0,.10)),
-url("images/hero.jpg.png");
+url(images/hero.webp);
 
 background-size: cover;
 background-position: center top;
@@ -190,7 +190,7 @@ section h2{
 
     background:
     linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),
-    url("images/about-bg.jpg");
+    url("images/about.webp");
 
     background-size:cover;
 
@@ -426,7 +426,7 @@ CONTACT BACKGROUND
 
     background:
     linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),
-    url("images/contact-bg.jpg");
+    url("images/contact.webps");
 
     background-size:cover;
 
@@ -437,6 +437,7 @@ CONTACT BACKGROUND
     background-attachment:fixed;
 
 }
+
 
 /*=========================
     SERVICES BACKGROUND
@@ -450,7 +451,7 @@ CONTACT BACKGROUND
 
     background:
     linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.50)),
-    url("images/services-bg.png");
+    url("images/services.webp");
 
     background-size:cover;
 
@@ -532,4 +533,26 @@ html{
 
     }
 
+}
+
+/* ===========================
+   GOOGLE MAP
+=========================== */
+
+.map-container{
+    margin-top:30px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,170,255,.35);
+    transition:.4s;
+}
+
+.map-container:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 50px rgba(0,170,255,.55);
+}
+
+.map-container iframe{
+    width:100%;
+    display:block;
 }
