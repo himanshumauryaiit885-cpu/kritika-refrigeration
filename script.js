@@ -21,14 +21,11 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => {
 
-    // On mobile, keep the Services section visible immediately
-    if (window.innerWidth <= 768 && section.id === "services") {
-        section.style.opacity = "1";
-        section.style.transform = "translateY(0)";
+    // Keep Services visible
+    if (section.id === "services") {
         return;
     }
 
-    // Keep the normal animation for everything else
     section.style.opacity = "0";
     section.style.transform = "translateY(50px)";
     section.style.transition = "all 0.8s ease";
@@ -48,9 +45,14 @@ window.addEventListener("scroll", () => {
 });
 
 // Welcome message
-window.onload = () => {
-    console.log("Welcome to Kritika Refrigeration!");
-};
+window.addEventListener("load", () => {
+    document.querySelectorAll("section").forEach(section => {
+        if (section.id === "services") {
+            section.style.opacity = "1";
+            section.style.transform = "translateY(0)";
+        }
+    });
+});
 
 const slider=document.getElementById("slider");
 
