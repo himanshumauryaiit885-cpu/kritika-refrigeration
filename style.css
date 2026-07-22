@@ -380,6 +380,16 @@ footer{
     font-size:14px;
 
 }
+/* Mobile only - Disable section background images */
+
+#services,
+#about,
+#contact{
+    background:
+    linear-gradient(180deg, #0a0a0a 0%, #111111 100%) !important;
+
+    background-image: none !important;
+}
 
 }
 
