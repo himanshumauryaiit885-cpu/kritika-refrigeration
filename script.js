@@ -11,10 +11,12 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = "1";
             entry.target.style.transform = "translateY(0)";
+            observer.unobserve(entry.target);
         }
     });
 }, {
-    threshold: 0.15
+    threshold: 0,
+    rootMargin: "150px 0px"
 });
 
 sections.forEach((section) => {
