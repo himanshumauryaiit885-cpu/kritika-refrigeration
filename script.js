@@ -18,10 +18,20 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 sections.forEach((section) => {
+
+    // On mobile, keep the Services section visible immediately
+    if (window.innerWidth <= 768 && section.id === "services") {
+        section.style.opacity = "1";
+        section.style.transform = "translateY(0)";
+        return;
+    }
+
+    // Keep the normal animation for everything else
     section.style.opacity = "0";
     section.style.transform = "translateY(50px)";
     section.style.transition = "all 0.8s ease";
     observer.observe(section);
+
 });
 
 // Header background on scroll
