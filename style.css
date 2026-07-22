@@ -230,15 +230,36 @@ footer{
     margin-bottom:35px;
     padding:18px 16px;
 
-    /* Initially invisible */
-    background:transparent;
-    border:1px solid transparent;
-    border-radius:20px;
+    /* Premium neutral glass */
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,0.18);
+    border-radius:22px;
 
     text-shadow:
-        0 2px 8px rgba(255,255,255,.25);
+        0 2px 8px rgba(255,255,255,0.25);
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.35),
+        inset 0 1px 1px rgba(255,255,255,0.15);
 
     transition:all .35s ease;
+}
+.mobile-title:hover,
+.mobile-title:active{
+
+    background:rgba(255,255,255,0.12);
+
+    border-color:rgba(255,255,255,0.35);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.45),
+        0 0 18px rgba(255,255,255,0.15),
+        inset 0 1px 1px rgba(255,255,255,0.25);
+
+    transform:translateY(-2px);
 }
 .mobile-title:active{
 
